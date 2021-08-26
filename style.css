@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    font-size: 28px;
+    color: #4887cc;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto 70px auto;
+}
+
+header .container {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #4887cc;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+header ul a {
+    font-size: 12px;
+    color: #4887cc;
+    margin: 0 0 0 15px;
+}
+
+header ul a:hover{
+    color: crimson;
+}
+
+.sticky-element{
+    position: sticky;
+    top: 0px;
+}
+
+.logo{
+    width: 300px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    display: inline-block;
+}
+
+.project-item {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 15px 0;
+    position: relative;
+}
+
+.project-item img {
+    width: 100%;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.align-bottom {
+    display: flex;
+    align-items: flex-end;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.project-name {
+    color: white;
+    background: #4887cc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    display: none;
+}
+.project-item:hover .project-name {
+    display: block;
+}
+
+footer .container {
+    height: 120px;
+    border-top: 2px solid #4887cc;
+    margin: 10 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4887cc;
+}
+
+footer p{
+    font-size: 14px;
+}
+
+footer p a {
+    color: #4887cc;
+}
+
+/* MEDIE QUERIES */
+
+@media all and (max-width: 960px) {
+    .body {
+        padding: 0 20px;
+    }
+    .project-grid {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 600px){
+    header ul li {
+        display: block;
+    }
+}
